@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.SetHeroController">
+   <children>
+      <Label fx:id="labeltext" layoutX="36.0" layoutY="141.0" text="Enter Hero name(3 char at least) : " />
+      <TextField fx:id="textField" alignment="TOP_LEFT" layoutX="14.0" layoutY="158.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" />
+      <CheckBox fx:id="mage" layoutX="455.0" layoutY="227.0" mnemonicParsing="false" onAction="#tomage" text="Mage" />
+      <CheckBox fx:id="healer" layoutX="455.0" layoutY="192.0" mnemonicParsing="false" onAction="#tohealer" text="Healer" />
+      <CheckBox fx:id="warrior" layoutX="455.0" layoutY="158.0" mnemonicParsing="false" onAction="#towarrior" text="Warrior" />
+      <CheckBox fx:id="hunter" layoutX="456.0" layoutY="124.0" mnemonicParsing="false" onAction="#tohunter" text="Hunter" />
+      <Label fx:id="labelError" layoutX="10.0" layoutY="10.0" textFill="RED" />
+      <Button layoutX="249.0" layoutY="320.0" onAction="#addToTeam" text="Add to the team" />
+      <ImageView fx:id="imageHero" fitHeight="150.0" fitWidth="200.0" layoutX="227.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../image/nothing.png" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

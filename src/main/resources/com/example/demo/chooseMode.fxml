@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.ChooseModeController">
+   <children>
+      <Button fx:id="consoleBut" layoutX="45.0" layoutY="29.0" mnemonicParsing="false" onAction="#startConsole" prefHeight="150.0" prefWidth="511.0" text="CONSOLE">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Button>
+      <Button fx:id="guiBut" layoutX="45.0" layoutY="206.0" mnemonicParsing="false" onAction="#startGUI" prefHeight="150.0" prefWidth="511.0" text="GUI">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Button>
+      <Label fx:id="label" layoutX="29.0" layoutY="37.0" prefHeight="327.0" prefWidth="587.0" text="LOOK AT YOUR CONSOLE ;)">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

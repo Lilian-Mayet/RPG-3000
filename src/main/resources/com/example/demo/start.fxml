@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:controller="com.example.demo.StartController"  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="labeltext" layoutX="148.0" layoutY="145.0" text="Choose with how many hero you want to play :" />
+      <ButtonBar layoutX="10.0" layoutY="10.0" prefWidth="0.0" />
+      <Label fx:id="nbHeroLabel" layoutX="225.0" layoutY="237.0" text="Size of the team : " />
+      <Button layoutX="252.0" layoutY="276.0" onAction="#start" text="Start" />
+      <ButtonBar layoutX="55.0" layoutY="174.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+            <Button mnemonicParsing="false" onAction="#set2" text="2" />
+            <Button mnemonicParsing="false" onAction="#set3" text="3" />
+            <Button mnemonicParsing="false" onAction="#set4" text="4" />
+            <Button mnemonicParsing="false" onAction="#set5" text="5" />
+            <Button mnemonicParsing="false" onAction="#set6" text="6" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

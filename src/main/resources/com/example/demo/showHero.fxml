@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.ShowHeroController">
+   <children>
+      <TableView fx:id="tableHero" layoutX="64.0" layoutY="20.0" prefHeight="200.0" prefWidth="711.0">
+         <columns>
+            <TableColumn fx:id="classType" prefWidth="75.0" text="Class" />
+            <TableColumn fx:id="name" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="healthpoint" prefWidth="75.0" text="HP" />
+            <TableColumn fx:id="strenght" prefWidth="75.0" text="Strenght" />
+            <TableColumn fx:id="defense" prefWidth="75.0" text="Defense" />
+         </columns>
+      </TableView>
+      <ImageView fx:id="imageHero1" fitHeight="111.0" fitWidth="109.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageHero2" fitHeight="111.0" fitWidth="109.0" layoutX="131.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageHero3" fitHeight="111.0" fitWidth="109.0" layoutX="265.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageHero4" fitHeight="111.0" fitWidth="109.0" layoutX="420.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageHero5" fitHeight="111.0" fitWidth="109.0" layoutX="557.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageHero6" fitHeight="111.0" fitWidth="109.0" layoutX="705.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true" />
+      <ButtonBar layoutX="140.0" layoutY="36.0" prefHeight="40.0" prefWidth="200.0" />
+      <Button fx:id="fightButton" layoutX="265.0" layoutY="404.0" mnemonicParsing="false" onAction="#gotoFight" text="Start Fight" />
+   </children>
+</AnchorPane>
